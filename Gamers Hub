@@ -1,0 +1,151 @@
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Welcome";
+    Text = "Script Made by Gamers!";
+})
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Gamers Hub")
+
+local KillingCheats = PhantomForcesWindow:NewSection("Main")
+
+KillingCheats:CreateButton("Animal Simulator", function()
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Welcome";
+    Text = "Script Made by Gamers!";
+})
+
+local Library = loadstring(Game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wizard"))()
+
+local PhantomForcesWindow = Library:NewWindow("Animal Simulator")
+
+local KillingCheats = PhantomForcesWindow:NewSection("boss")
+
+KillingCheats:CreateToggle("Kill Griffin Boss", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("Griffin"):WaitForChild("Humanoid"),
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("Kill Lava Boss", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("LavaGorilla"):WaitForChild("Humanoid"),
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("Auto Collect Coin", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("CoinEvent"):FireServer()
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("AutoFarm Mode", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+game:GetService("ReplicatedStorage"):WaitForChild("Events"):WaitForChild("CoinEvent"):FireServer()
+
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("Griffin"):WaitForChild("Humanoid"),
+    [2] = 1
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("LavaGorilla"):WaitForChild("Humanoid"),
+    [2] = 4
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("jdskhfsIIIllliiIIIdchgdIiIIIlIlIli"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("AutoFarm Mode 2", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+game.Players.LocalPlayer.Character.Humanoid.Jump = false
+wait(1140)
+game.Players.LocalPlayer.Character.Humanoid.Jump = true
+end
+end)
+end)
+
+KillingCheats:CreateButton("Animal Simulator subaquático", function()
+KillingCheats:CreateToggle("Kill Crocodile Boss", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("CROCODILEBOSS"):WaitForChild("Humanoid")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DamageEvent"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("Kill Shark Boss", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("SHARKBOSS"):WaitForChild("Humanoid")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DamageEvent"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+
+KillingCheats:CreateToggle("Kill Turtle Boss", function(state)
+_G.DamageEvent = (state and true or false)
+wait()
+while _G.DamageEvent == true do
+wait()
+local args = {
+    [1] = workspace:WaitForChild("NPC"):WaitForChild("TURTLEBOSS"):WaitForChild("Humanoid")
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("DamageEvent"):FireServer(unpack(args))
+wait(0.5)
+end
+end)
+end)
+
+local KillingCheats = PhantomForcesWindow:NewSection("Player")
+
+KillingCheats:CreateButton("Speed 100", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 100
+end)
+
+KillingCheats:CreateButton("Speed 16", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+end)
